@@ -11,10 +11,6 @@ import {
   Text,
   View
 } from 'react-native';
-import MapView, { PROVIDER_GOOGLE, PROVIDER_DEFAULT} from 'react-native-maps';
-
-const IOS = Platform.OS === 'ios';
-const ANDROID = Platform.OS === 'android';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -26,17 +22,7 @@ const instructions = Platform.select({
 export default class App extends Component<{}> {
   render() {
     return (
-      <MapView
-        provider = {PROVIDER_GOOGLE}
-        style = {styles.containerMap}
-        initialRegion = {{
-          latitude: 39.7392,
-          longitude: -104.9903,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
-        }}
-        />
-     /* <View style={styles.container}>
+      <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
@@ -46,8 +32,7 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-      </View> */
-    
+      </View>
     );
   }
 }
@@ -69,8 +54,4 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-  containerMap: {
-    height: '100%',
-    width: '100%',
-  }
 });
