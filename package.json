@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node":"8.1.1",
-    "npm":"5.0.3"
+    "node": "8.1.1",
+    "npm": "5.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +18,11 @@
   "author": "David Zou",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.3",
-    "nodemon": "^1.18.3"
+    "mongoose": "^5.2.6",
+    "nodemon": "^1.18.3",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
   }
 }
