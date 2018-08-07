@@ -30,6 +30,8 @@
     "nodemon": "^1.18.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "path-parse": "^1.0.6",
+    "path-parser": "^4.2.0",
     "stripe": "^6.7.0"
   }
 }
